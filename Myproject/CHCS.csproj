@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F53C5E5A-D97F-489B-B088-3964F05C28A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Myproject</RootNamespace>
+    <AssemblyName>Myproject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CREATE OR LOG IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CREATE OR LOG IN.Designer.cs">
+      <DependentUpon>CREATE OR LOG IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor.cs" />
+    <Compile Include="DoctorDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorDashboard.designer.cs">
+      <DependentUpon>DoctorDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myproject\Properties\Resources.cs" />
+    <Compile Include="SpecialistDoctorDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialistDoctorDashboard.designer.cs">
+      <DependentUpon>SpecialistDoctorDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserEditProfile.Designer.cs">
+      <DependentUpon>UserEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorHomePage.designer.cs">
+      <DependentUpon>DoctorHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocEditPofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocEditPofile.designer.cs">
+      <DependentUpon>DocEditPofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialistHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialistHomePage.designer.cs">
+      <DependentUpon>SpecialistHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialistEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialistEditProfile.designer.cs">
+      <DependentUpon>SpecialistEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs" />
+    <Compile Include="MessageDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageDashBoard.designer.cs">
+      <DependentUpon>MessageDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messaging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messaging.designer.cs">
+      <DependentUpon>Messaging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentViaMobileBanking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentViaMobileBanking.Designer.cs">
+      <DependentUpon>PaymentViaMobileBanking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign in.Designer.cs">
+      <DependentUpon>Sign in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SPECIALIST_DOCTOR.cs" />
+    <Compile Include="TalkToDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TalkToDoctor.Designer.cs">
+      <DependentUpon>TalkToDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TalkToGynecologist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TalkToGynecologist.designer.cs">
+      <DependentUpon>TalkToGynecologist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TalkToMedicineSpecialist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TalkToMedicineSpecialist.designer.cs">
+      <DependentUpon>TalkToMedicineSpecialist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TalkToSkinSpecialist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TalkToSkinSpecialist.Designer.cs">
+      <DependentUpon>TalkToSkinSpecialist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHomePage.designer.cs">
+      <DependentUpon>UserHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Who%27ll sign up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Who%27ll sign up.Designer.cs">
+      <DependentUpon>Who%27ll sign up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member sign-up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member sign-up.Designer.cs">
+      <DependentUpon>Member sign-up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor signup.Designer.cs">
+      <DependentUpon>Doctor signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialistSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialistSignUp.Designer.cs">
+      <DependentUpon>SpecialistSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CREATE OR LOG IN.resx">
+      <DependentUpon>CREATE OR LOG IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorDashboard.resx">
+      <DependentUpon>DoctorDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialistDoctorDashboard.resx">
+      <DependentUpon>SpecialistDoctorDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserEditProfile.resx">
+      <DependentUpon>UserEditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorHomePage.resx">
+      <DependentUpon>DoctorHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocEditPofile.resx">
+      <DependentUpon>DocEditPofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialistHomePage.resx">
+      <DependentUpon>SpecialistHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialistEditProfile.resx">
+      <DependentUpon>SpecialistEditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageDashBoard.resx">
+      <DependentUpon>MessageDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messaging.resx">
+      <DependentUpon>Messaging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentViaMobileBanking.resx">
+      <DependentUpon>PaymentViaMobileBanking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign in.resx">
+      <DependentUpon>Sign in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TalkToDoctor.resx">
+      <DependentUpon>TalkToDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TalkToGynecologist.resx">
+      <DependentUpon>TalkToGynecologist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TalkToMedicineSpecialist.resx">
+      <DependentUpon>TalkToMedicineSpecialist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TalkToSkinSpecialist.resx">
+      <DependentUpon>TalkToSkinSpecialist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHomePage.resx">
+      <DependentUpon>UserHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Who%27ll sign up.resx">
+      <DependentUpon>Who%27ll sign up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member sign-up.resx">
+      <DependentUpon>Member sign-up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor signup.resx">
+      <DependentUpon>Doctor signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialistSignUp.resx">
+      <DependentUpon>SpecialistSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No_Image_Available.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
